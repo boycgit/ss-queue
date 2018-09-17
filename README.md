@@ -9,7 +9,7 @@ Data Structure Serial -  Queue
  - fully tested
 
 Refer:
- - [前端学数据结构 - 栈（Stack）和 队列（Queue）](https://boycgit.github.io/ds-linked-list/)
+ - [前端学数据结构 - 栈（Stack）和 队列（Queue）](https://boycgit.github.io/ss-stack/)
 
 ## Installation
 
@@ -20,7 +20,7 @@ npm install ss-queue --save
 ```
 
 ```javascript
-var LinkedList = require('ss-queue');
+var Queue = require('ss-queue');
 ```
 
 ### Global object
@@ -49,12 +49,6 @@ npm run doc
 ```
 
 then open the generated `out/index.html` file in your browser.
-
-## todo
-
-Highly recommend article [面试精选：链表问题集锦](http://wuchong.me/blog/2014/03/25/interview-link-questions/) for more skils;
-
- - detect has loop or not，[Detect a loop in cyclic/circular linked list](https://js-algorithms.tutorialhorizon.com/2015/12/25/detect-cyclic-circular-linked-list/)，and then [count loop length](https://js-algorithms.tutorialhorizon.com/2015/12/26/loop-length-cyclic-circular-list/) 
 
 ## License
 

@@ -19,7 +19,7 @@ export default class Queue<T> {
      * @returns {(T | null)}
      * @memberof Queue
      */
-    get peek(): T | null {
+    get peek(): T | void {
         return this.queue.head;
     }
 
@@ -56,6 +56,6 @@ export default class Queue<T> {
    */
   dequeue(): T | null {
     const removedHead = this.queue.removeHead();
-    return removedHead ? removedHead : null;
+    return typeof removedHead !== 'undefined' ? removedHead : null;
   }
 }

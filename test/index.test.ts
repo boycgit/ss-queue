@@ -33,7 +33,7 @@ describe('队列 - peek 属性', () => {
 
   test('访问空对队列的时候，返回 null', () => {
     const emptyQueue = new Queue();
-    expect(emptyQueue.peek).toBeNull();
+    expect(emptyQueue.peek).toBeUndefined();
   });
 });
 
@@ -79,6 +79,6 @@ describe('队列 - dequeue 方法', () => {
     const emptyQueue = new Queue();
     expect(emptyQueue.dequeue()).toBeNull();
     expect(emptyQueue.length).toBe(0);
-    expect(emptyQueue.peek).toBeNull();
+    expect(emptyQueue.peek).toBeUndefined();
   });
 });
