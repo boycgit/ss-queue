@@ -77,7 +77,7 @@ describe('队列 - dequeue 方法', () => {
   test('空对队列也支持 dequeue ', () => {
     const data = chance.integer();
     const emptyQueue = new Queue();
-    expect(emptyQueue.dequeue()).toBeNull();
+    expect(emptyQueue.dequeue()).toBeUndefined();
     expect(emptyQueue.length).toBe(0);
     expect(emptyQueue.peek).toBeUndefined();
   });

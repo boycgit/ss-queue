@@ -54,8 +54,8 @@ export default class Queue<T> {
    * @returns {(T | null)}
    * @memberof Queue
    */
-  dequeue(): T | null {
+  dequeue(): T | void {
     const removedHead = this.queue.removeHead();
-    return typeof removedHead !== 'undefined' ? removedHead : null;
+    return typeof removedHead !== 'undefined' ? removedHead : void 0;
   }
 }
