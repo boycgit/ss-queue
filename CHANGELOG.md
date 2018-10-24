@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/boycgit/ss-queue/compare/v1.0.3...v1.0.4) (2018-10-24)
+
+
+### Features
+
+* **打包:** 统一 cmd/umd 的输出为 'named' ([c5442e8](https://github.com/boycgit/ss-queue/commit/c5442e8))
+
+
+
 <a name="1.0.3"></a>
 ## 1.0.3 (2018-10-24)
 
