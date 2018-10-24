@@ -34,7 +34,9 @@ const compileConfig = function ({
   }
   return Object.assign(external ? { external: external } : {}, {
     input: path.resolve(fromDir, `${targetName}.js`),
-    output: Object.assign(
+    output: Object.assign({
+      exports: 'named' // 这个很关键，统一 cmd 的引用方式
+    },
       format === 'umd'
         ? {
           name: capitalize(targetName),

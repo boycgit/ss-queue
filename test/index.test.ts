@@ -68,14 +68,12 @@ describe('队列 - dequeue 方法', () => {
   });
 
   test('出队操作', () => {
-    const data = chance.integer();
     expect(a.dequeue()).toBe(arr[0]);
     expect(a.length).toBe(arr.length - 1);
     expect(a.peek).toBe(arr[1]);
   });
 
   test('空对队列也支持 dequeue ', () => {
-    const data = chance.integer();
     const emptyQueue = new Queue();
     expect(emptyQueue.dequeue()).toBeUndefined();
     expect(emptyQueue.length).toBe(0);

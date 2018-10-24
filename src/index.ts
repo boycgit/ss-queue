@@ -1,5 +1,4 @@
 import { SinglyList } from 'ss-linked-list';
-
 export default class Queue<T> {
   queue: SinglyList<T>;
     constructor(...values: T[]) {
@@ -16,7 +15,7 @@ export default class Queue<T> {
     /**
      * Read the element at the front of the queue without removing it.
      *
-     * @returns {(T | null)}
+     * @returns {(T | void)}
      * @memberof Queue
      */
     get peek(): T | void {
@@ -49,9 +48,9 @@ export default class Queue<T> {
 
   /**
    * Remove the element at the front of the queue (the head of the linked list).
-   * If the queue is empty, return null.
+   * If the queue is empty, return void.
    *
-   * @returns {(T | null)}
+   * @returns {(T | void)}
    * @memberof Queue
    */
   dequeue(): T | void {
