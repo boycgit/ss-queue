@@ -57,4 +57,14 @@ export default class Queue<T> {
     const removedHead = this.queue.removeHead();
     return typeof removedHead !== 'undefined' ? removedHead : void 0;
   }
+
+  /**
+   * transform to array
+   *
+   * @returns {T[]}
+   * @memberof Queue
+   */
+  toArray(): T[] {
+    return this.queue.toArray();
+  }
 }

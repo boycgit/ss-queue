@@ -8,6 +8,7 @@ describe('队列 - 构造函数', () => {
     const a = new Queue();
     expect(a.length).toBe(0);
     expect(a.isEmpty()).toBeTruthy();
+    expect(a.toArray()).toEqual([]);
   });
 
   test('默认接受多个参数，用于初始化生成队列', () => {
@@ -17,6 +18,7 @@ describe('队列 - 构造函数', () => {
     expect(a.peek).toBe(arr[0]);
     expect(a.queue).toBeInstanceOf(SinglyList);
     expect(a.isEmpty()).toBeFalsy();
+    expect(a.toArray()).toEqual(arr);
   });
 });
 
